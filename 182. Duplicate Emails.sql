@@ -1,13 +1,23 @@
 -- 1.Subquery
-SELECT Email
+SELECT
+	Email
 FROM (
-SELECT Email, count(*) AS EmailCount
-FROM Person
-WHERE EmailCount>1
-Group BY Email
-);
+	SELECT
+		Email,
+		count(*) AS EmailCount
+	FROM
+		Person
+	WHERE
+		EmailCount > 1
+	GROUP BY
+		Email);
 
 -- 2.HAVING
-SELECT Email FROM Person
-GROUP BY Email
-HAVING COUNT(Id) > 1;
+SELECT
+	Email
+FROM
+	Person
+GROUP BY
+	Email
+HAVING
+	COUNT(Id) > 1;

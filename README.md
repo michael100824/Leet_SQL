@@ -1,2 +1,2 @@
 # Leet_SQL
-Leet SQL 
+Leet SQL Hands on
